@@ -38,7 +38,7 @@
       padding: 4rem 2rem;
       text-align: center;
     }
-    .video-container {
+    .video-container, .model-container {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
@@ -46,12 +46,28 @@
       max-width: 100%;
       margin-top: 1.5rem;
     }
-    .video-container iframe {
+    .video-container iframe,
+    .model-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .timeline-event {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #4dd0e1;
+      width: 100%;
+      text-align: left;
     }
     footer {
       text-align: center;
@@ -72,7 +88,10 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#mission">Mission</a>
     <a href="#projects">Projects</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#models">3D Models</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -81,7 +100,7 @@
     <p>NeoGeneX is a pioneering biotech company founded by a young visionary with a bold dream: to bring ancient life into the modern age. We explore reverse-evolution, genetic modification, and prehistoric biology to unlock secrets that could revolutionize science and health.</p>
   </section>
 
-  <section style="background-color: #000;">
+  <section id="mission" style="background-color: #000;">
     <h2>Our Mission</h2>
     <p style="max-width: 700px; margin: 0 auto;">
       At <strong>NeoGeneX</strong>, we believe the key to the past unlocks the future. Using cutting-edge genetic technologies, 
@@ -93,7 +112,7 @@
   <section id="projects" style="background-color: #111;">
     <h2>Reverse Evolution: The Chickenosaurus Project</h2>
     <p style="max-width: 700px; margin: 0 auto 2rem;">
-      Discover how scientists are working to bring out ancestral dinosaur traits in modern birds by reactivating dormant genes responsible for tails, teeth, and more.
+      Discover how scientists are working to bring out ancestral dinosaur traits in modern birds by reactivating dormant genes responsible for tails, teeth, and claws.
     </p>
     <div class="video-container">
       <iframe 
@@ -108,7 +127,7 @@
   <section style="background-color: #000;">
     <h2>CRISPR: Gene Editing Power</h2>
     <p style="max-width: 700px; margin: 0 auto 2rem;">
-      Learn how CRISPR is revolutionizing the world of genetics and making projects like NeoGeneX possible.
+      Learn how CRISPR is revolutionizing genetics and making projects like NeoGeneX possible.
     </p>
     <div class="video-container">
       <iframe 
@@ -116,6 +135,51 @@
         title="CRISPR: Gene editing and beyond"
         frameborder="0"
         allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section id="timeline" style="background-color: #111;">
+    <h2>Evolution & Research Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-event">
+        <strong>65 Million Years Ago:</strong> Dinosaurs go extinct.
+      </div>
+      <div class="timeline-event">
+        <strong>Present Day:</strong> Birds evolve from surviving dino species.
+      </div>
+      <div class="timeline-event">
+        <strong>NeoGeneX Research:</strong> Identifying dormant tail, claw, and tooth genes in bird embryos.
+      </div>
+      <div class="timeline-event">
+        <strong>Next Step:</strong> Using CRISPR to activate ancient traits and study developmental biology.
+      </div>
+    </div>
+  </section>
+
+  <section id="models" style="background-color: #000;">
+    <h2>Interactive 3D Models</h2>
+    <p>Explore the microscopic world of DNA and the tools of genetic editing in full 3D!</p>
+
+    <h3>DNA Double Helix</h3>
+    <div class="model-container">
+      <iframe title="3D DNA Model"
+        frameborder="0"
+        allowfullscreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        src="https://sketchfab.com/models/c46ce9fcb0cb4e77b938c7d8b3f857b8/embed">
+      </iframe>
+    </div>
+
+    <h3>CRISPR-Cas9 Protein</h3>
+    <div class="model-container">
+      <iframe title="CRISPR-Cas9 3D"
+        frameborder="0"
+        allowfullscreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        src="https://sketchfab.com/models/cc18c8c3ccbc4e3f872fabcc1eeae4a9/embed">
       </iframe>
     </div>
   </section>

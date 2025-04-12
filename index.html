@@ -36,41 +36,25 @@
     }
     section {
       padding: 4rem 2rem;
-      background-color: #000;
-      color: white;
       text-align: center;
     }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    section p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-      line-height: 1.6;
-    }
-    iframe {
-      border: none;
-    }
-    .video-container {
+    .video-container,
+    .model-container {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       max-width: 100%;
+      margin-top: 2rem;
     }
-    .video-container iframe {
+    .video-container iframe,
+    .model-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-    }
-    .model-container {
-      width: 100%;
-      height: 480px;
-      margin: 2rem auto;
+      border: 0;
     }
     footer {
       text-align: center;
@@ -90,6 +74,7 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#mission">Mission</a>
     <a href="#projects">Projects</a>
     <a href="#media">Media</a>
     <a href="#contact">Contact</a>
@@ -97,54 +82,48 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>NeoGeneX is a pioneering biotech company founded by a young visionary with a bold dream: to bring ancient life into the modern age. We explore reverse-evolution, genetic modification, and prehistoric biology to unlock secrets that could revolutionize science and health.</p>
+    <p>
+      NeoGeneX is a pioneering biotech company founded by a young visionary with a bold dream: to bring ancient life into the modern age. We explore reverse-evolution, genetic modification, and prehistoric biology to unlock secrets that could revolutionize science and health.
+    </p>
   </section>
 
-  <section>
+  <section id="mission" style="background-color: #111;">
     <h2>Our Mission</h2>
-    <p>At <strong>NeoGeneX</strong>, we believe the key to the past unlocks the future. Using cutting-edge genetic technologies, we aim to reawaken ancient traits in modern species to better understand evolution, biology, and even human health. Our work lies at the frontier of science — where discovery, ethics, and imagination collide.</p>
+    <p style="max-width: 700px; margin: 0 auto; line-height: 1.6;">
+      At <strong>NeoGeneX</strong>, we believe the key to the past unlocks the future. Using cutting-edge genetic technologies, 
+      we aim to reawaken ancient traits in modern species to better understand evolution, biology, and even human health. 
+      Our work lies at the frontier of science — where discovery, ethics, and imagination collide.
+    </p>
   </section>
 
   <section id="projects">
     <h2>Our Projects</h2>
-    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
-      <li>🦜 Reverse-Evolving Modern Birds</li>
-      <li>🧬 Chickenosaurus Experiments</li>
-      <li>🦠 Ancient Gene Health Research</li>
+    <ul>
+      <li>Reverse-Evolving Modern Birds</li>
+      <li>Chickenosaurus Experiments</li>
+      <li>Ancient Gene Health Research</li>
     </ul>
   </section>
 
-  <section id="media">
-    <h2>Inside the Science</h2>
-
-    <h3>CRISPR: Gene Editing and Beyond</h3>
+  <section id="media" style="background-color: #111;">
+    <h2>Featured Video: CRISPR in Action</h2>
+    <p>Learn how gene editing with CRISPR is revolutionizing biology.</p>
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed/4YKFw2KZA5o" title="CRISPR: Gene editing and beyond" allowfullscreen></iframe>
     </div>
 
-    <h3>Turning Birds Into Dinosaurs - Ancient Genes</h3>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/MUOqYxl8YF8" title="The science of reverse evolution" allowfullscreen></iframe>
-    </div>
-
-    <h3>🧬 CRISPR in 3D</h3>
+    <h2 style="margin-top: 4rem;">Explore DNA in 3D</h2>
+    <p>Interactive 3D model of a DNA double helix structure:</p>
     <div class="model-container">
-      <iframe title="CRISPR Molecular Animation" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
-        src="https://sketchfab.com/models/0e45f22ab5ad4cb080c53f9f22ac4f82/embed">
-      </iframe>
-    </div>
-
-    <h3>🦖 Dino-Bird Concept Model</h3>
-    <div class="model-container">
-      <iframe title="Feathered Dino Model" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
-        src="https://sketchfab.com/models/e27ecb67828d47669ad6d0e30be7e23a/embed">
+      <iframe title="DNA Double Helix" frameborder="0" allowfullscreen 
+        src="https://sketchfab.com/models/c5f43ef2e4e64ff0a1580c03763871c4/embed">
       </iframe>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact / Join Us</h2>
-    <p>Email us at: <strong>wyattdahlke2011@gmail.com</strong></p>
+    <p>Email us at: <strong>contact@neogenex.com</strong></p>
     <p>Want to join our mission? Stay tuned for updates and opportunities!</p>
   </section>
 

@@ -38,16 +38,19 @@
       padding: 4rem 2rem;
       text-align: center;
     }
-    .video-placeholder {
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 300px;
-      background-color: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #bbb;
-      font-size: 1.2rem;
-      margin-top: 1rem;
+      height: 100%;
     }
     footer {
       text-align: center;
@@ -59,6 +62,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <img src="neogenex_logo_final.png" alt="NeoGeneX Logo" />
     <h1>NeoGeneX</h1>
@@ -71,69 +75,44 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
+  <section id="about" style="background-color:#111;">
     <h2>About Us</h2>
     <p>NeoGeneX is a pioneering biotech company founded by a young visionary with a bold dream: to bring ancient life into the modern age. We explore reverse-evolution, genetic modification, and prehistoric biology to unlock secrets that could revolutionize science and health.</p>
   </section>
 
-  <section style="background-color: #111; color: white;">
-    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Our Mission</h2>
-    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+  <section style="background-color: #000;">
+    <h2>Our Mission</h2>
+    <p style="max-width: 700px; margin: 0 auto;">
       At <strong>NeoGeneX</strong>, we believe the key to the past unlocks the future. Using cutting-edge genetic technologies, 
       we aim to reawaken ancient traits in modern species to better understand evolution, biology, and even human health. 
       Our work lies at the frontier of science — where discovery, ethics, and imagination collide.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Our Projects</h2>
-    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
-      <li>🧬 Reverse-Evolving Modern Birds</li>
-      <li>🦖 Chickenosaurus Experiments</li>
-      <li>🧫 Ancient Gene Health Research</li>
-    </ul>
-  </section>
-
-  <section style="background-color: #000; color: white;">
-    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Sneak Peek</h2>
-    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">
-      Take a glimpse into the science behind NeoGeneX and the power of CRISPR to rewrite evolution.
+  <section id="projects" style="background-color: #111;">
+    <h2>Reverse Evolution: The Chickenosaurus Project</h2>
+    <p style="max-width: 700px; margin: 0 auto 2rem;">
+      Discover how scientists are working to bring out ancestral dinosaur traits in modern birds by reactivating dormant genes responsible for tails, teeth, and more.
     </p>
-    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
+    <div class="video-container">
       <iframe 
-        src="https://www.youtube.com/embed/4YKFw2KZA5o" 
-        title="CRISPR: Gene editing and beyond"
-        frameborder="0" 
-        allowfullscreen 
-        style="position:absolute; top:0; left:0; width:100%; height:100%;">
+        src="https://www.youtube.com/embed/vCN01G3eUvw"
+        title="How Scientists Created The Chickenosaurus"
+        frameborder="0"
+        allowfullscreen>
       </iframe>
     </div>
   </section>
 
-  <section style="background-color: #111; color: white;">
-    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Dino DNA Explained</h2>
-    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">
-      Dive into the iconic explanation of how dinosaur DNA was used to bring ancient creatures back to life.
-    </p>
-    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
-      <iframe 
-        src="https://www.youtube.com/embed/1Uq5WSzUaTQ" 
-        title="Mr. D.N.A's Science Lesson | Jurassic Park"
-        frameborder="0" 
-        allowfullscreen 
-        style="position:absolute; top:0; left:0; width:100%; height:100%;">
-      </iframe>
-    </div>
-  </section>
-
-  <section id="contact" style="background-color: #111; color: #e0f7fa;">
+  <section id="contact" style="background-color: #000;">
     <h2>Contact / Join Us</h2>
-    <p>Got questions, collab ideas, or dino-DNA to share?</p>
-    <p>Email us at: <a href="mailto:contact@neogenex.com" style="color: #4dd0e1;">contact@neogenex.com</a></p>
+    <p>Email us at: <strong>wyattdahlke2011@gmail.com</strong></p>
+    <p>Want to join our mission? Stay tuned for updates and opportunities!</p>
+  </section>
 
-    <div style="margin-top: 1.5rem;">
-      <a href="https://github.com/fruggyvr/neogenex" target="_blank" style="margin: 0 1rem; color: #4dd0e1;">GitHub</a>
-      <a href="https://youtube.com" target="_blank" style="margin: 0 1rem; color: #4dd0e1;">YouTube</a>
-      <a href="https://instagram.com" target="_blank" style="margin: 0 1rem; color: #4dd0
-::contentReference[oaicite:4]{index=4}
- 
+  <footer>
+    &copy; 2025 NeoGeneX. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -11,51 +11,132 @@
       background-color: #0a0a0a;
       color: #e0f7fa;
     }
+
     header {
       background-color: #111;
       padding: 1rem;
       text-align: center;
     }
+
     header img {
       width: 200px;
     }
+
     h1 {
       margin: 0.5rem 0;
       font-size: 2rem;
     }
+
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
       margin-bottom: 2rem;
     }
+
     nav a {
       color: #4dd0e1;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
       padding: 4rem 2rem;
       text-align: center;
     }
-    .video-container,
-    .model-container {
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .video-container {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       max-width: 100%;
-      margin-top: 2rem;
     }
-    .video-container iframe,
-    .model-container iframe {
+
+    .video-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: 0;
     }
+
+    .dna-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .dna-gallery img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+    }
+
+    .dna-animation {
+      margin: 4rem auto;
+      width: 100px;
+      height: 200px;
+      position: relative;
+    }
+
+    .dna-bar {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation: rotateDNA 4s linear infinite;
+    }
+
+    .dna-bar span {
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 20px;
+      background: #4dd0e1;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: pulse 1.5s infinite ease-in-out alternate;
+    }
+
+    .dna-bar span:nth-child(even) {
+      background: #80deea;
+    }
+
+    .dna-bar span:nth-child(1) { top: 0px; }
+    .dna-bar span:nth-child(2) { top: 20px; }
+    .dna-bar span:nth-child(3) { top: 40px; }
+    .dna-bar span:nth-child(4) { top: 60px; }
+    .dna-bar span:nth-child(5) { top: 80px; }
+    .dna-bar span:nth-child(6) { top: 100px; }
+    .dna-bar span:nth-child(7) { top: 120px; }
+    .dna-bar span:nth-child(8) { top: 140px; }
+    .dna-bar span:nth-child(9) { top: 160px; }
+    .dna-bar span:nth-child(10) { top: 180px; }
+
+    @keyframes rotateDNA {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.5; transform: scaleY(0.8); }
+      100% { opacity: 1; transform: scaleY(1.2); }
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -67,7 +148,7 @@
 </head>
 <body>
   <header>
-    <img src="neogenex_logo_final.png" alt="NeoGeneX Logo" />
+    <img src="neogenex_logo_final.png" alt="NeoGeneX Logo">
     <h1>NeoGeneX</h1>
     <p>Rewriting Evolution</p>
   </header>
@@ -76,55 +157,55 @@
     <a href="#about">About</a>
     <a href="#mission">Mission</a>
     <a href="#projects">Projects</a>
-    <a href="#media">Media</a>
+    <a href="#crispr">CRISPR</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>
-      NeoGeneX is a pioneering biotech company founded by a young visionary with a bold dream: to bring ancient life into the modern age. We explore reverse-evolution, genetic modification, and prehistoric biology to unlock secrets that could revolutionize science and health.
-    </p>
+    <p>NeoGeneX is a pioneering biotech company founded by a young visionary with a bold dream: to bring ancient life into the modern age. We explore reverse-evolution, genetic modification, and prehistoric biology to unlock secrets that could revolutionize science and health.</p>
   </section>
 
   <section id="mission" style="background-color: #111;">
     <h2>Our Mission</h2>
-    <p style="max-width: 700px; margin: 0 auto; line-height: 1.6;">
-      At <strong>NeoGeneX</strong>, we believe the key to the past unlocks the future. Using cutting-edge genetic technologies, 
-      we aim to reawaken ancient traits in modern species to better understand evolution, biology, and even human health. 
-      Our work lies at the frontier of science — where discovery, ethics, and imagination collide.
-    </p>
+    <p>At <strong>NeoGeneX</strong>, we believe the key to the past unlocks the future. Using cutting-edge genetic technologies, we aim to reawaken ancient traits in modern species to better understand evolution, biology, and even human health. Our work lies at the frontier of science — where discovery, ethics, and imagination collide.</p>
   </section>
 
   <section id="projects">
     <h2>Our Projects</h2>
-    <ul>
-      <li>Reverse-Evolving Modern Birds</li>
-      <li>Chickenosaurus Experiments</li>
-      <li>Ancient Gene Health Research</li>
+    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
+      <li>🦖 Reverse-Evolving Modern Birds</li>
+      <li>🐔 Chickenosaurus Experiments</li>
+      <li>🧬 Ancient Gene Health Research</li>
     </ul>
+
+    <div class="dna-animation">
+      <div class="dna-bar">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
   </section>
 
-  <section id="media" style="background-color: #111;">
-    <h2>Featured Video: CRISPR in Action</h2>
-    <p>Learn how gene editing with CRISPR is revolutionizing biology.</p>
+  <section id="crispr" style="background-color: #000;">
+    <h2>How CRISPR Works</h2>
+    <p>CRISPR allows us to precisely edit DNA — it’s the core tech that lets us activate ancient genes and explore evolution in real time.</p>
+
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/4YKFw2KZA5o" title="CRISPR: Gene editing and beyond" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/2pp17E4E-O8" title="How CRISPR lets us edit our DNA" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <h2 style="margin-top: 4rem;">Explore DNA in 3D</h2>
-    <p>Interactive 3D model of a DNA double helix structure:</p>
-    <div class="model-container">
-      <iframe title="DNA Double Helix" frameborder="0" allowfullscreen 
-        src="https://sketchfab.com/models/c5f43ef2e4e64ff0a1580c03763871c4/embed">
-      </iframe>
+    <div class="dna-gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/DNA_double_helix_horizontal.png/640px-DNA_double_helix_horizontal.png" alt="DNA Structure">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CRISPR-Cas9_mechanism.svg/640px-CRISPR-Cas9_mechanism.svg.png" alt="CRISPR Cas9 Diagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/RNA_structure.png/640px-RNA_structure.png" alt="RNA Strand">
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact / Join Us</h2>
-    <p>Email us at: <strong>contact@neogenex.com</strong></p>
-    <p>Want to join our mission? Stay tuned for updates and opportunities!</p>
+    <p>Email us at: <strong>wyattdahlke2011@gmail.com</strong></p>
+    <p>Follow us for project updates, science drops, and more!</p>
   </section>
 
   <footer>
